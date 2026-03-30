@@ -1,0 +1,143 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#0077b6;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+nav{
+background:#2b6cb0;
+text-align:center;
+padding:12px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover;
+height:250px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+.hero h1{
+background:rgba(0,0,0,0.5);
+padding:10px 20px;
+border-radius:8px;
+}
+
+section{
+padding:30px;
+}
+
+.services-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.service-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+flex:1;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+}
+
+.doctor-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.doctor-card{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+flex:1;
+transition:0.3s;
+}
+
+.doctor-card:hover{
+transform:scale(1.05);
+}
+
+.doctor-card img{
+width:80px;
+height:80px;
+border-radius:50%;
+}
+
+form{
+background:white;
+padding:20px;
+border-radius:15px;
+max-width:400px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+background:#0077b6;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#023e8a;
+}
+
+.review-card{
+background:white;
+padding:15px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#2b6cb0;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
