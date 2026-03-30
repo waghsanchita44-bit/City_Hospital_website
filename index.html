@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>City Hospital</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#0077b6;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#2b6cb0;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:12px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+/* HERO */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover;
+height:250px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+.hero h1{
+background:rgba(0,0,0,0.5);
+padding:10px 20px;
+border-radius:8px;
+}
+
+/* SECTION */
+
+section{
+padding:30px;
+}
+
+/* SERVICES */
+
+.services-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.service-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+flex:1;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+/* DOCTORS */
+
+.doctor-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.doctor-card{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+flex:1;
+transition:0.3s;
+}
+
+.doctor-card:hover{
+transform:scale(1.05);
+}
+
+.doctor-card img{
+width:90px;
+height:90px;
+border-radius:50%;
+}
+
+/* FORM */
+
+form{
+background:white;
+padding:20px;
+border-radius:15px;
+max-width:400px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+background:#0077b6;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#023e8a;
+}
+
+/* REVIEWS */
+
+.review-card{
+background:white;
+padding:15px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+background:#2b6cb0;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.services-container,
+.doctor-container{
+flex-direction:column;
+}
+
+nav{
+flex-wrap:wrap;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>City Hospital</h1>
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#doctors">Doctors</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a href="about.html">About Us</a>
+<a href="appointment.html">Appointment</a>
+<a href="patient_registration.html">Patient Registration</a>
+<a href="login.html">Login</a>    
+</nav>
+
+<div class="hero">
+<h1>Quality Healthcare For Everyone</h1>
+</div>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services-container">
+
+<div class="service-card">
+<h3>❤️ Cardiology</h3>
+<p>Heart treatment and care</p>
+</div>
+
+<div class="service-card">
+<h3>🧠 Neurology</h3>
+<p>Brain and nerve treatment</p>
+</div>
+
+<div class="service-card">
+<h3>🦴 Orthopedic</h3>
+<p>Bone and joint care</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="doctors">
+
+<h2>Our Doctors</h2>
+
+<div class="doctor-container">
+
+<div class="doctor-card">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h3>Dr. Sharma</h3>
+
+<p>Cardiologist</p>
+
+</div>
+
+
+<div class="doctor-card">
+
+<img src="https://randomuser.me/api/portraits/men/75.jpg">
+
+<h3>Dr. Mehta</h3>
+
+<p>Neurologist</p>
+
+</div>
+
+
+<div class="doctor-card">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<h3>Dr. Patel</h3>
+
+<p>Orthopedic</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Book Appointment</h2>
+
+<form id="form">
+
+<label>Name</label>
+
+<input type="text" required>
+
+<label>Age</label>
+
+<input type="number" required>
+
+<label>Date</label>
+
+<select>
+
+<option>Monday</option>
+<option>Tuesday</option>
+<option>Wednesday</option>
+<option>Thursday</option>
+<option>Friday</option>
+
+</select>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</section>
+
+
+
+<section id="reviews">
+
+<h2>Patient Reviews</h2>
+
+<div class="review-card">
+<p>"Excellent doctors and friendly staff."</p>
+<h4>- Rahul ⭐⭐⭐⭐⭐</h4>
+</div>
+
+<div class="review-card">
+<p>"Best hospital service in the city."</p>
+<h4>- Sneha ⭐⭐⭐⭐⭐</h4>
+</div>
+
+<div class="review-card">
+<p>"Clean hospital and quick treatment."</p>
+<h4>- Amit ⭐⭐⭐⭐</h4>
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Our Location</h2>
+
+<iframe
+
+src="https://maps.google.com/maps?q=hospital&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+width="100%"
+
+height="300"
+
+style="border:0;">
+
+</iframe>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>📞 Phone: 9876543210</p>
+
+<p>📧 Email: cityhospital@gmail.com</p>
+
+<p>📍 Address: Main Road, City</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 City Hospital | All Rights Reserved</p>
+
+</footer>
+
+
+<script>
+
+document.getElementById("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Appointment Booked Successfully!");
+
+});
+
+</script>
+
+</body>
+
+</html>
