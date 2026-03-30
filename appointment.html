@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Appointment - City Hospital</title>
+
+<script>
+function bookAppointment(){
+alert("Appointment Booked Successfully!");
+return true;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Book an Appointment</h1>
+
+<form onsubmit="return bookAppointment()">
+
+<label>Patient Name:</label><br>
+<input type="text" required><br><br>
+
+<label>Phone Number:</label><br>
+<input type="text" required><br><br>
+
+<label>Select Doctor:</label><br>
+<select>
+<option>Cardiologist</option>
+<option>Neurologist</option>
+<option>Orthopedic</option>
+</select><br><br>
+
+<label>Date:</label><br>
+<input type="date" required><br><br>
+
+<input type="submit" value="Book Appointment">
+
+</form>
+
+</body>
+</html>
