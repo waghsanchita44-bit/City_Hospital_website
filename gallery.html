@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hospital Gallery</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#0077b6;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.gallery img{
+width:250px;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:#2b6cb0;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Hospital Gallery</h1>
+</header>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3">
+<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118">
+<img src="https://images.unsplash.com/photo-1580281658629-19d5c7d9c2f8">
+<img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b">
+<img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc">
+<img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982">
+
+</div>
+
+<footer>
+
+<p>© 2026 City Hospital</p>
+
+</footer>
+
+</body>
+</html>
